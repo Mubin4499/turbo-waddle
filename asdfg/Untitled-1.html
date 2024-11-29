@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Рождения!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: url('IMG_20240503_221035.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            line-height: 1.5;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .extra-text {
+            margin-top: 20px;
+            font-size: 1em;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background: rgba(255, 255, 255, 0.8);
+            color: #ff4e50;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            animation: fadeInUp 2.5s ease-in-out;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover {
+            background: rgba(255, 255, 255, 1);
+            color: #3c83f3;
+            transform: scale(1.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-style: italic;
+            font-size: 1em;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+            animation: fadeInUp 3s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            button {
+                font-size: 0.9em;
+                padding: 8px 16px;
+            }
+
+            .signature {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Эй, братишка! 🎉</h1>
+    <p>С Днём Рождения! Желаю тебе кучу кайфа, море угара и гору клёвых моментов!</p>
+    <p>Пусть каждый день будет как тусовка в твою честь, а все заморочки улетают, как ненужные сообщения. 🎂</p>
+    <p class="extra-text">
+        Пусть твоя жизнь будет такой же яркой и насыщенной, как наши совместные движухи и приколы!
+        Дружба — это когда не знаешь, кто из нас больше влипает в неприятности, и это офигенно! 💥
+    </p>
+    <button onclick="showSurprise()">Нажми сюда</button>
+    <div class="signature">С любовью, твой друг и брат Муба</div>
+
+    <script>
+         function startConfetti() {
+            setInterval(createConfetti, 100);
+        }
+        function showSurprise() {
+            alert('зер кадан мегирими хамачоя');
+            alert('ок зер кун тм');
+        }
+    </script>
+</body>
+</html>
+
